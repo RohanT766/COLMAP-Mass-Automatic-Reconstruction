@@ -39,7 +39,7 @@ Before using the provided script, ensure you have the necessary prerequisites:
          ...
      ```
 
-     The script expects to find subfolders inside a directory named `YOUR_ROOT_FOLDER`.
+     The script expects to find subfolders inside a directory named `root_folder`.
 
 4. **Save Changes**:
    
