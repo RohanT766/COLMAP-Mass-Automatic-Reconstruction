@@ -1,2 +1,72 @@
-# COLMAP-Mass-Automatic-Reconstruction
-This script automates the process of running the COLMAP automatic reconstructor on a set of subfolders within the "root_folder" directory. It creates a separate workspace for each subfolder and performs 3D reconstruction on the images located in each subfolder.
+# COLMAP-Mass-3D-Automatic-Reconstruction
+
+## Description
+
+This project provides a Bash script to automate the 3D reconstruction process using COLMAP. The script simplifies the process of reconstructing 3D models from a set of images in multiple subfolders, creating separate workspaces for each subfolder.
+
+## Getting Started
+
+Before using the provided script, ensure you have the necessary prerequisites:
+
+- **COLMAP**: [Install COLMAP](https://colmap.github.io/install.html) and make sure it's properly configured on your system.
+
+### Usage
+
+1. **Clone or Download Script**: Clone or download the script to your local machine.
+
+2. **Edit the Script**:
+   
+   - Open the `automate_reconstruction.sh` file in a text editor.
+   
+   - Modify the script to specify the paths to your root folder and root workspace:
+
+     ```bash
+     MAIN_WORKSPACE="workspace_path"
+     for subfolder in root_folder*; do
+     ```
+
+     - `MAIN_WORKSPACE`: Set this to the desired path where you want to create the workspace directories for 3D reconstructions.
+     - `root_folder`: Replace root_folder with the path to the folder that contains all of the subfolders of images to reconstruct.
+
+3. **Ensure Directory Structure**:
+   
+   - Ensure your directory structure matches the expected layout:
+
+     ```
+     YOUR_ROOT_FOLDER/
+         subfolder1/
+         subfolder2/
+         ...
+     ```
+
+     The script expects to find subfolders inside a directory named `YOUR_ROOT_FOLDER`.
+
+4. **Save Changes**:
+   
+   - Save the changes to the script.
+
+5. **Execute the Script**:
+
+   - Open a terminal and navigate to the directory where you placed the script:
+
+     ```bash
+     cd /path/to/script/directory
+     ```
+
+   - Make the script executable, if not already done:
+
+     ```bash
+     chmod +x automate_reconstruction.sh
+     ```
+
+   - Execute the script:
+
+     ```bash
+     ./automate_reconstruction.sh
+     ```
+
+     Replace `automate_reconstruction.sh.sh` with the actual name of your script if it's different.
+
+6. **Completion Message**:
+   
+   - Once all subfolders have been processed, you will see the final message: "All reconstructions completed."
