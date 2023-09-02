@@ -33,7 +33,7 @@ Before using the provided script, ensure you have the necessary prerequisites:
    - Ensure your directory structure matches the expected layout:
 
      ```
-     YOUR_ROOT_FOLDER/
+     root_folder/
          subfolder1/
          subfolder2/
          ...
