@@ -12,7 +12,7 @@ Before using the provided script, ensure you have the necessary prerequisites:
 
 ### Usage
 
-1. **Clone or Download Script**: Clone or download the script to your local machine.
+1. **Copy or Download Script**: Copy or download the script to your local machine.
 
 2. **Edit the Script**:
    
@@ -25,8 +25,8 @@ Before using the provided script, ensure you have the necessary prerequisites:
      for subfolder in root_folder*; do
      ```
 
-     - `MAIN_WORKSPACE`: Set this to the desired path where you want to create the workspace directories for 3D reconstructions.
-     - `root_folder`: Replace root_folder with the path to the folder that contains all of the subfolders of images to reconstruct.
+     - `workspace_apth`: Replace this with the desired path where you want to create the workspace directories for 3D reconstructions.
+     - `root_folder`: Replace this with the path to the folder that contains all of the subfolders of images to reconstruct.
 
 3. **Ensure Directory Structure**:
    
